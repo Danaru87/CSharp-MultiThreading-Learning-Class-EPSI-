@@ -19,7 +19,7 @@ namespace HorlogeV2
             InitializeComponent();
             LeThread = new Thread(Go);
             LeThread.Name = "Thread calcul heure / date";
-            LeThread.Start();
+            
         }
 
         private void Go()
@@ -36,6 +36,7 @@ namespace HorlogeV2
         private void form_load(object sender, EventArgs e)
         {
             lblDateHeure.Text = DateTime.Now.ToString();
+            LeThread.Start();
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)

@@ -16,12 +16,13 @@ namespace Horloge_V3
         {
             InitializeComponent();
             
-            timer1.Enabled = true;
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             lblDateHeure.Text = DateTime.Now.ToString();
+            timer1.Enabled = true;
         }
 
         private void AfficherDateHeure()
